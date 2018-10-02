@@ -13,7 +13,39 @@
     <br><br><br><br>
 <div id="word"></div>
   <script language="javascript">
-  var words = ["monitor", "program", "application", "keyboard", "javascript", "gaming", "network"];
+  var words = ["roll", "crease", "fold", "store", "bend", "shorten", "twist", "dapple", "crumple", "shave", "tear", "chip", "split", "cut", "sever", "drop", "remove", "simplify", "differ", "disarrange", "open", "mix", "splash", "knot", "spill", "curve"];
+
+  var word = words[Math.floor(Math.random() * words.length)];
+
+  console.log(word);
+
+  document.getElementById("word").textContent = word;
+
+  var getRandomWord = function () {
+      return words[Math.floor(Math.random() * words.length)];
+  };
+
+</script>
+    <br><br>
+    <div id="location"></div>
+      <script language="javascript">
+  var words = ["inside", "outside"];
+
+  var word = words[Math.floor(Math.random() * words.length)];
+
+  console.log(word);
+
+  document.getElementById("word").textContent = word;
+
+  var getRandomWord = function () {
+      return words[Math.floor(Math.random() * words.length)];
+  };
+
+</script>
+    <br><br>
+    <div id="repetition"></div>
+      <script language="javascript">
+  var words = ["once", "many"];
 
   var word = words[Math.floor(Math.random() * words.length)];
 
