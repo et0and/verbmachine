@@ -43,9 +43,24 @@
   };
 
 </script>
-  
+    
+    <br><br>
+    <div id="time"></div>
+  <script language="javascript">
+  var times = ["once", "many"];
+
+  var time = times[Math.floor(Math.random() * times.length)];
+
+  console.log(time);
+
+  document.getElementById("time").textContent = time;
+
+  var getRandomTime = function () {
+      return times[Math.floor(Math.random() * times.length)];
+  };
 
 </script>
+  
   </center>
 </body>
 </html>
