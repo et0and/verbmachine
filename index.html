@@ -1,0 +1,28 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>Verb Machine</title>
+     <link href="index.css" rel="stylesheet" type="text/css">
+     <meta name="description" content="A machine for generating verbs and actions">
+</head>
+<body>
+
+  <script language="javascript">
+  var words = ["monitor", "program", "application", "keyboard", "javascript", "gaming", "network"];
+
+  var word = words[Math.floor(Math.random() * words.length)];
+
+  console.log(word);
+
+  document.getElementById("word").textContent = word;
+
+  var getRandomWord = function () {
+      return words[Math.floor(Math.random() * words.length)];
+  };
+
+</script>
+</body>
+</html>
