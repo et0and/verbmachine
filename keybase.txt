@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/tomupom
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://serra.today
+  * I am tomupom (https://keybase.io/tomupom) on keybase.
+  * I have a public key ASBExkdiJmzYyS1UiPSAVB6yLdXEmL49qOYTDyL4haklMwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101bbb312d32eca49004fc4711b29fa84933b8a89b2c2927e40a5aae0a0295718060a",
+      "host": "keybase.io",
+      "kid": "012044c64762266cd8c92d5488f480541eb22dd5c498be3da8e6130f22f885a925330a",
+      "uid": "c01a4402507061b90f4e37c2a963a219",
+      "username": "tomupom"
+    },
+    "merkle_root": {
+      "ctime": 1555733150,
+      "hash": "65f27454d98c3e28f18c73d07426f56a8a4fe61cd58bddb898cb2442acf6864d62e7f7b4ed2d86ec6a8e30b62acca2057e8f775bd44190dcd2e49f24870596f3",
+      "hash_meta": "801bb92baccaac630004cba58a087f3b9d3dd9c09856c2c08127afa38c17fa50",
+      "seqno": 5208933
+    },
+    "service": {
+      "entropy": "JMtVrFhcVClV5p4GSpC5ukPc",
+      "hostname": "serra.today",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.2.2"
+  },
+  "ctime": 1555733196,
+  "expire_in": 504576000,
+  "prev": "fb24da8b0554ceefa50d77915a1a5adcb78ea11b98903b0982bc9e873171284f",
+  "seqno": 55,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRMZHYiZs2MktVIj0gFQesi3VxJi+PajmEw8i+IWpJTMKp3BheWxvYWTESpcCN8Qg+yTaiwVUzu+lDXeRWhpa3LeOoRuYkDsJgryehzFxKE/EIFkkaeak/0EdjWkY7jK80DXWg7mH3KEPTmk8haE0aOSWAgHCo3NpZ8RAW+qtCWqjj05hwd4rzawf3kpLdjKLGIhQrIXE25Z1eSlTlqXse+XLQfFgk2+Y80nXYxQHGpJWBoe6M5n00cpCDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBveR3skG25KNVQy5uDFeS9LSLhlVuOM4yZZHnxIPLMno3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tomupom
+
+==================================================================
