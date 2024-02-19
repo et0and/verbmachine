@@ -4,62 +4,44 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
     <title>Verb Machine</title>
-     <link href="index.css" rel="stylesheet" type="text/css">
-     <meta name="description" content="A machine for generating verbs and actions">
-</head>
-<body>
-  <center>
-    <br><br><br><br><br><br><br><br><br>
-<div id="word"></div>
-  <script language="javascript">
-  var words = ["roll", "crease", "fold", "store", "bend", "shorten", "twist", "dapple", "crumple", "shave", "tear", "chip", "split", "cut", "sever", "drop", "remove", "simplify", "differ", "disarrange", "open", "mix", "splash", "knot", "spill", "curve", "lift", "inlay", "impress", "fire", "flood", "smear", "rotate", "swirl", "support", "hook", "suspend", "spread", "hang", "collect", "tension", "gravity", "nature", "grouping", "layering", "felting", "grasp", "tighten", "bundle", "heap", "gather", "scatter", "arrange", "repair", "discard", "pair", "distribute", "surfeit", "compliment", "eclose", "surround", "encircle", "hole", "cover", "wrap", "dig", "tie", "bind", "weave", "join", "match", "laminate", "bond", "hinge", "mark", "expand", "dilute", "light", "modulate", "distill", "waves", "electromagnetic", "inertia", "ionization", "polarization", "refraction", "tides", "reflection", "equilibrium", "symmetry", "friction", "stretch", "bounce", "erase", "spray", "systematize", "refer", "force", "mapping", "location", "context", "time", "cabonization", "continue"];
-
-  var word = words[Math.floor(Math.random() * words.length)];
-
-  console.log(word);
-
-  document.getElementById("word").textContent = word;
-
-  var getRandomWord = function () {
-      return words[Math.floor(Math.random() * words.length)];
-  };
-
-</script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="A machine for generating verbs and actions">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="word"></div>
     
-    <br><br>
-    <div id="place"></div>
-  <script language="javascript">
-  var places = ["inside", "outside"];
+    <div id="place" style="margin-top: 20px;"></div>
 
-  var place = places[Math.floor(Math.random() * places.length)];
-
-  console.log(place);
-
-  document.getElementById("place").textContent = place;
-
-  var getRandomPlace = function () {
-      return places[Math.floor(Math.random() * places.length)];
-  };
-
-</script>
+    <div id="time" style="margin-top: 20px;"></div>
     
-    <br><br>
-    <div id="time"></div>
-  <script language="javascript">
-  var times = ["once", "many"];
+    <script>
+      var words = ["roll", "crease", "fold", "store", "bend", "shorten", "twist", "dapple", "crumple", "shave", "tear", "chip", "split", "cut", "sever", "drop", "remove", "simplify", "differ", "disarrange", "open", "mix", "splash", "knot", "spill", "curve", "lift", "inlay", "impress", "fire", "flood", "smear", "rotate", "swirl", "support", "hook", "suspend", "spread", "hang", "collect", "tension", "gravity", "nature", "grouping", "layering", "felting", "grasp", "tighten", "bundle", "heap", "gather", "scatter", "arrange", "repair", "discard", "pair", "distribute", "surfeit", "compliment", "enclose", "surround", "encircle", "hole", "cover", "wrap", "dig", "tie", "bind", "weave", "join", "match", "laminate", "bond", "hinge", "mark", "expand", "dilute", "light", "modulate", "distill", "waves", "electromagnetic", "inertia", "ionization", "polarization", "refraction", "tides", "reflection", "equilibrium", "symmetry", "friction", "stretch", "bounce", "erase", "spray", "systematize", "refer", "force", "mapping", "location", "context", "time", "carbonization", "continue", "illuminate", "calculate", "navigate", "synthesize"];
 
-  var time = times[Math.floor(Math.random() * times.length)];
+      var places = ["inside", "outside", "above", "beneath", "around", "between"];
 
-  console.log(time);
+      var times = ["once", "many", "periodically", "always", "never", "seldom"];
+      
+      function getRandomElement(array) {
+        return array[Math.floor(Math.random() * array.length)];
+      }
 
-  document.getElementById("time").textContent = time;
+      function updateDisplayedWords() {
+        document.getElementById("word").textContent = getRandomElement(words);
+        document.getElementById("place").textContent = getRandomElement(places);
+        document.getElementById("time").textContent = getRandomElement(times);
+      }
 
-  var getRandomTime = function () {
-      return times[Math.floor(Math.random() * times.length)];
-  };
-
-</script>
-  
-  </center>
-</body>
+      // Call the function on page load to set initial values
+      updateDisplayedWords();
+    </script>
+  </body>
 </html>
